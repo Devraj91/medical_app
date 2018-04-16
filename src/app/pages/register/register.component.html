@@ -1,0 +1,127 @@
+<app-sign-in-navbar></app-sign-in-navbar>
+
+<div class="container-fluid sign-up-page">
+
+    <div class="row">
+
+        <div class="col-md-5 col-sm-12 doctor-bg">
+
+            <div class="whyToJoin">
+                <div class="w5 whyToJoin-heading">Why join Epilen?</div>
+
+                <hr class="header-line w6">
+
+                <div class="form-inline w4 list">
+                    <span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.57 18.57" width="18" height="18" ><defs><style>.cls-1{fill:#fdc330;}</style></defs><title>Single artboard</title><path class="cls-1" d="M1265.47,2685.07a9.29,9.29,0,1,0,9.29,9.29A9.29,9.29,0,0,0,1265.47,2685.07Zm-2,14.51,0,0-0.09.09-4.61-4.57,1.73-1.73,2.9,2.86,7.35-7.27,1.73,1.73Z" transform="translate(-1256.18 -2685.07)"/></svg></span>
+                    Build your online identity
+                </div>
+
+                <div class="form-inline list">
+                    <span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.57 18.57" width="18" height="18" ><defs><style>.cls-1{fill:#fdc330;}</style></defs><title>Single artboard</title><path class="cls-1" d="M1265.47,2685.07a9.29,9.29,0,1,0,9.29,9.29A9.29,9.29,0,0,0,1265.47,2685.07Zm-2,14.51,0,0-0.09.09-4.61-4.57,1.73-1.73,2.9,2.86,7.35-7.27,1.73,1.73Z" transform="translate(-1256.18 -2685.07)"/></svg></span>
+                    Boost your income
+                </div>
+
+                <div class="form-inline list">
+                    <span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.57 18.57" width="18" height="18" ><defs><style>.cls-1{fill:#fdc330;}</style></defs><title>Single artboard</title><path class="cls-1" d="M1265.47,2685.07a9.29,9.29,0,1,0,9.29,9.29A9.29,9.29,0,0,0,1265.47,2685.07Zm-2,14.51,0,0-0.09.09-4.61-4.57,1.73-1.73,2.9,2.86,7.35-7.27,1.73,1.73Z" transform="translate(-1256.18 -2685.07)"/></svg></span>
+                    Practice anytime, anywhere
+                </div>
+
+                <div class="form-inline list">
+                    <span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.57 18.57" width="18" height="18" ><defs><style>.cls-1{fill:#fdc330;}</style></defs><title>Single artboard</title><path class="cls-1" d="M1265.47,2685.07a9.29,9.29,0,1,0,9.29,9.29A9.29,9.29,0,0,0,1265.47,2685.07Zm-2,14.51,0,0-0.09.09-4.61-4.57,1.73-1.73,2.9,2.86,7.35-7.27,1.73,1.73Z" transform="translate(-1256.18 -2685.07)"/></svg></span>
+                    Zero on-board cost
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-7 doctor-left-bar">
+
+            <div class="card">
+
+                <div class="card-body">
+                        
+                        <div class="row">
+
+                            <div class="col-sm-2"></div>
+
+                            <div class="col-sm-8 login-area">
+                                <div class="">
+                                    <div class="primary-heading w6">Get started absolutely free</div>
+                                    <div class="secondary-heading w5">
+                                        <div>
+                                        <span></span>
+                                        Welcome Doctor ! Sign up to join Epilen
+                                        </div>
+                                    </div>
+                                    <!-- <div class="terms w5"><a href="#">Terms & Condition</a></div> -->
+                                </div>
+
+
+                                <form id="form-part-1" class="login-form" [formGroup]="registerForm_part_1">
+									<div class="form-group">
+										<input type="text" name="name" [(ngModel)]="name" class="form-control epilen-input" placeholder="First name" formControlName="name"/>
+										<div class="form-alert" *ngIf="!registerForm_part_1.controls['name'].valid && registerForm_part_1.controls['name'].touched">Name is required</div>
+									</div>
+
+									<div class="form-group form-fields">
+										<input type="text" name="email" placeholder="Email address" [(ngModel)]="email" 
+										class="form-control epilen-input" formControlName="email"/>
+										<div class="form-alert" *ngIf="!registerForm_part_1.controls['email'].valid && registerForm_part_1.controls['email'].touched">email is required</div>
+									</div>
+
+									<div class="form-group form-fields">
+										<input type="text" name="password" placeholder="Create new password" [(ngModel)]="password" class="form-control epilen-input" formControlName="password"/>
+										<div class="forgot-password w5"><a href="#">6 characters minimum</a></div>
+										<div class="form-alert" *ngIf="!registerForm_part_1.controls['password'].valid && registerForm_part_1.controls['password'].touched">Password must be of 6 characters</div>
+									</div>
+
+									<div class="form-group form-footer">
+										<div class="col-md-12">
+											<button class="btn btn-info epilen-btn btn-continue" (click)="nextForm(registerForm_part_1.value);" [disabled]="!registerForm_part_1.valid">CONTINUE</button>
+										</div>
+									</div>
+								</form>
+
+								<form class="hide-div login-form" id="form-part-2" [formGroup]="registerForm_part_2">
+								
+									<div class="form-group">
+										<input type="text" name="regNo" [(ngModel)]="regNo" class="form-control epilen-input" placeholder="Medical practice registration number" formControlName="regNo"/>
+										<div class="form-alert" *ngIf="!registerForm_part_2.controls['regNo'].valid && registerForm_part_2.controls['regNo'].touched">Password must be of 8 characters</div>
+									</div>
+
+									<div class="form-group form-fields">
+										<input type="text" name="model" [(ngModel)]="model" [ngbTypeahead]="search" placeholder="State of registration" [resultFormatter]="formatter"autocomplete="on" class="form-control epilen-input typeahead" formControlName="model"/>
+										<div class="form-alert" *ngIf="!registerForm_part_2.controls['model'].valid && registerForm_part_2.controls['model'].touched"></div>
+									</div>
+
+									<div class="form-group form-fields">
+										<input type="text" name="regYear" [(ngModel)]="regYear" class="form-control epilen-input" placeholder="Year of registration" formControlName="regYear"/>
+										<div class="form-alert" *ngIf="!registerForm_part_2.controls['regYear'].valid && registerForm_part_2.controls['regYear'].touched">Password must be of 6 characters</div>
+									</div>
+
+									<div class="form-check">
+									    <div class="form-inline remember-me">
+                                            <input type="checkbox" name="" class="form-control" />
+                                            <span class="remember-me-span">Acceptance of Terms and Conditions and Data Management Policy.</span>
+                                        </div>
+									</div>
+
+									<div class="form-group form-footer">
+										<div class="col-md-12">
+											<button class="btn btn-info epilen-btn btn-previous" (click)="prevForm();">Back</button>
+											<button class="btn btn-info epilen-btn btn-sign-up" (click)="save(registerForm_part_2.value);" [disabled]="!registerForm_part_2.valid">Create my account</button>
+										</div>
+									</div>
+
+								</form>
+                            </div>
+
+                            <div class="col-sm-2"></div>
+                            
+                        </div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </div>

@@ -1,0 +1,54 @@
+html, body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	background-color: #fff;
+	overflow-x: hidden;
+}
+
+.doctor-bg{
+	background: linear-gradient(180deg,transparent 7%,#000000 92%),url(assets/images/logo/doctor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 91vh;
+}
+
+
+.doctor-left-bar{
+	padding:0px 0px 0px 0px;
+}
+
+.epilen-btn-primary{
+	border-radius: 20px !important;
+    width: 28% !important;
+}
+
+.epilen-input{
+	height: 43px;
+	border-radius: 22px;
+}
+
+.whyToJoin{
+	color: #fff;
+}
+
+.header-line{
+	background-color: #fff;
+}
+/*.epilen-input {
+	border: none;
+    border-bottom: 1px solid lightgray;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}*/
+
+.w6{
+	font-weight: 600;
+}
+
+.w5{
+	font-weight: 500;
+}
+
+.w4{
+	font-weight: 400;
+}

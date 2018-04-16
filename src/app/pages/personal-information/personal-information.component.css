@@ -1,0 +1,30 @@
+.modal-main-body{
+	margin-top: 10%;
+}
+.personal-info{
+	margin: 25px 0px 0px 0px !important;
+	border: none;
+    border-radius: 8px;
+    height: 275px;
+    max-height: 275px;
+}
+.card-header{
+	background-color: #fff !important;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+}
+
+.text-left {
+	display: inline !important;
+	color: gray;
+}
+
+.btn-consultation{
+	background-color: #fff;
+    border: 2px solid #DCE0E5;
+    border-radius: 18px;
+    width: 180px;
+    height: 26px;
+    color: #9C9C9C;
+    line-height: 13px;
+}

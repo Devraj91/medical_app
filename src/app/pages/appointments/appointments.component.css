@@ -1,0 +1,28 @@
+.appointments{
+	margin: 25px 0px 30px 0px !important;
+	border: none;
+    border-radius: 8px;
+    height: 330px;
+    max-height: 330px;
+}
+.card-header{
+	background-color: #fff !important;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+}
+
+.text-left {
+	display: inline !important;
+}
+
+.time-range{
+	background-color: #F6F7F8;
+    height: 37px;
+    margin: -17px -16px 0px -16px;
+    line-height: 34px;
+}
+
+.time{
+	color: #AAAAAB;
+	font-weight: 500;
+}

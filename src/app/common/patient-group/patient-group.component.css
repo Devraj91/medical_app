@@ -1,0 +1,27 @@
+.patient-group{
+	margin: 25px 23px 25px 0px !important;
+	border: none;
+    border-radius: 8px;
+   	height: 330px;
+    max-height: 330px;
+}
+.card-header{
+	background-color: #fff !important;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+}
+
+.text-left {
+	display: inline !important;
+	color: gray;
+}
+
+.btn-group-odd{
+	background-color: #73A8BC;
+	color: #fff;
+}
+
+.btn-group-even{
+	background-color: #173C5B;
+	color: #fff;
+}

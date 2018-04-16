@@ -1,0 +1,19 @@
+
+
+.chat-request{
+	margin: 25px 0px 0px 0px !important;
+	border: none;
+    border-radius: 8px;
+    height: 275px;
+    max-height: 275px;
+}
+.card-header{
+	background-color: #fff !important;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+}
+
+.text-left {
+	display: inline !important;
+	color: gray;
+}

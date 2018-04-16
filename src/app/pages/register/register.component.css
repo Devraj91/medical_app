@@ -1,0 +1,109 @@
+.hide-div{
+	display: none;
+}
+
+.sign-up-page{
+	overflow-y: hidden;
+}
+.epilen-modal-header{
+	margin: 7% 0% 4% 0%;
+}
+
+.epilen-navbar-login{
+	border-radius: 20px !important;
+    border: 1px solid lightgray !important;
+}
+
+.card{
+	height: 91vh;
+}
+
+.login-area{
+	margin-top: 60px;
+}
+.primary-heading{
+	font-size: 32px;
+	color: #000000;
+}
+
+.card-body{
+	margin-left: 20px;
+    margin-right: 20px;
+}
+.secondary-heading{
+	margin-top: 10px;
+	font-size:18px;
+}
+.terms{
+	float: right;
+	font-size: 11px;
+}
+.terms a{
+	color: #2196f3 !important;
+}
+.forgot-password{
+	float: right;
+	margin: 5px 12px 0px 0px;
+	font-size: 10px;
+}
+.forgot-password a{
+	text-decoration: none;
+	color: #4589A3 !important;
+}
+.login-form{
+	margin-top: 60px;
+    font-size: 18px;
+    color: #474747;
+}
+
+.login-form{
+	margin-bottom: 60px;
+}
+
+.form-alert{
+	color: #ff3366;
+    font-size: 12px;
+    padding: 4px 0px 0px 9px;
+}
+.btn-sign-previous{
+	width: 17%;
+}
+.epilen-btn{
+	border-radius: 20px !important;
+    color: #707070 !important;
+    border: 1px solid #707070 !important;
+    background-color: #ffffff !important;
+    font-weight: 600;  
+}
+.btn-sign-up{
+	width: 40%;
+}
+.btn-continue{
+	width: 23%;
+}
+.whyToJoin-heading{
+	font-size: 24px;
+}
+.whyToJoin{
+	margin: 55% 15% 0% 12%;	
+}
+.whyToJoin .list{
+    margin-top: 22px;
+}
+.whyToJoin span svg{
+	margin-right: 15px;
+}
+.remember-me{
+	font-size: 12px;
+    margin-bottom: 7px;
+}
+.form-footer{
+	margin-top: 45px;
+}
+
+.form-fields{
+	margin-top: 19px;
+}
+.remember-me-span{
+	margin-left: 10px;
+}

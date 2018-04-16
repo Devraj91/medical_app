@@ -1,0 +1,27 @@
+.appointments-review{
+	margin: 25px 23px 0px 0px !important;
+	border: none;
+    border-radius: 8px;
+    height: 345px;
+    max-height: 345px;
+}
+.card-header{
+	background-color: #fff !important;
+	border-top-left-radius: 8px !important;
+	border-top-right-radius: 8px !important;
+}
+.day{
+	font-size: 10px;
+    margin: 5px 0px 0px 0px;
+    color: gray;
+}
+/*#container {
+	margin: 0 auto;
+	max-width: 400px;
+	min-width: 380px;
+}*/
+
+.text-left {
+	display: inline !important;
+	color: gray;
+}
