@@ -1,57 +1,67 @@
 <div class="dashboard">
-	<app-doctor-navbar (toggleMenu)="menuToggle($event)"></app-doctor-navbar>
-	<div class="row">
-		
-		<div class="side-navbar">
-			<app-side-nav (selectComponent)="changeComponent($event)"></app-side-nav>
-		</div>
+    <app-doctor-navbar (toggleMenu)="menuToggle($event)"></app-doctor-navbar>
+    <div class="row">
 
-		<div class="main-body">
-			
-			<div class="dashboard" *ngIf="dashboard==true">
-				<div class="row">
-					<div class="col-md-8">
-						<app-search></app-search>
-						<div class="row">
-							<div class="col-md-7">
-								<app-personal-information></app-personal-information>
-							</div>
-							<div class="col-md-5 chat-area">
-								<app-chat-request></app-chat-request>
-							</div>
-						</div>
-					</div>
+        <div class="side-navbar">
+            <app-side-nav (selectComponent)="changeComponent($event)"></app-side-nav>
+        </div>
 
-					<div class="col-md-4">
-						<app-appointments-review></app-appointments-review>
-					</div>
-				</div>
+        <div class="main-body">
 
-				<div class="row">
-					
-					<div class="col-md-8">
-						<app-appointments></app-appointments>
-					</div>
+            <div class="dashboard" *ngIf="dashboard==true">
+                <div class="row">
+                    <div class="col-md-8">
+                        <app-search></app-search>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <app-personal-information></app-personal-information>
+                            </div>
+                            <div class="col-md-5 chat-area">
+                                <app-chat-request></app-chat-request>
+                            </div>
+                        </div>
+                    </div>
 
-					<div class="col-md-4">
-						<app-patient-group></app-patient-group>
-					</div>
-				</div>
-			</div>
+                    <div class="col-md-4">
+                        <app-appointments-review></app-appointments-review>
+                    </div>
+                </div>
 
-			<div class="" *ngIf="availability==true">
-				<div class="row">
-					<div class="col-md-12">
-						<app-search></app-search>
-						<div class="row">
-							<app-add-slot-template></app-add-slot-template>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			
-		</div>
+                <div class="row">
 
-	</div>
+                    <div class="col-md-8">
+                        <app-appointments></app-appointments>
+                    </div>
+
+                    <div class="col-md-4">
+                        <app-patient-group></app-patient-group>
+                    </div>
+                </div>
+            </div>
+
+            <div class="" *ngIf="availability==true">
+                <div class="row">
+                    <div class="col-md-12">
+                        <app-search></app-search>
+                        <div class="row">
+                            <app-add-slot-template></app-add-slot-template>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="" *ngIf="availiability==true">
+                <div class="row">
+                    <div class="col-md-12">
+                        <app-availiability></app-availiability>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>
